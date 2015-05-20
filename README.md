@@ -11,6 +11,12 @@ XML document whose format is described by the following DTD:
 
   http://www.apple.com/DTDs/PropertyList-1.0.dtd
 
+### About this fork
+
+The "mlabbe" fork on Github has the following changes:
+
+- Fixes to compile on OS X
+
 ### About this version
 
 The portable proplib library is derived from the original implementation that
@@ -42,3 +48,12 @@ there are some exceptions:
 It should be mentioned that NetBSD's proplib code is a free, clean room
 implementation based in the specifications available for Mac OS X, written
 originally by Jason R. Thorpe.
+
+#### Building on OS X
+
+Make sure you have the autoconf system installed.  With MacPorts, this is achieved by:
+
+    sudo port install autoconf automake
+
+Run "bootstrap"
+
