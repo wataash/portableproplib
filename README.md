@@ -15,7 +15,7 @@ XML document whose format is described by the following DTD:
 
 The "mlabbe" fork on Github has the following changes:
 
-- Fixes to compile on OS X
+- Fixes to compile on OS X, iOS and Android (NDK)
 
 ### About this version
 
