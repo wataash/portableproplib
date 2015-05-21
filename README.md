@@ -49,7 +49,7 @@ It should be mentioned that NetBSD's proplib code is a free, clean room
 implementation based in the specifications available for Mac OS X, written
 originally by Jason R. Thorpe.
 
-#### Building on OS X
+#### Building for OS X
 
 Make sure you have the autoconf system installed.  With MacPorts, this is achieved by:
 
@@ -57,3 +57,12 @@ Make sure you have the autoconf system installed.  With MacPorts, this is achiev
 
 Run "bootstrap"
 
+#### Building for iOS
+
+The iOS subdirectory has an xcodeproj file which builds a static library.
+
+The only notable hack is forcing XCode to avoid using the system rbtree.h file; this is done by defining its compile guard in the xcodeproj file: `_SYS_RBTREE_H`.
+
+#### Building for Android
+
+Supplied Android.mk file generates a static library.  `LOCAL_EXPORT_C_INCLUDES` contains the path to the public-facing header files.

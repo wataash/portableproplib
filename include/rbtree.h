@@ -29,8 +29,8 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ifndef _SYS_RBTREE_H_
-#define	_SYS_RBTREE_H_
+#ifndef _SYS_PROP_RBTREE_H_
+#define	_SYS_PROP_RBTREE_H_
 
 #if defined(_KERNEL) || defined(_STANDALONE)
 #include <sys/types.h>
